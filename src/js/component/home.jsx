@@ -1,24 +1,34 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Message from './Message.jsx';
+import ResetButton from './ResetButton.jsx';
+import Tile from './Tile.jsx';
 
 //create your first component
 const Home = () => {
+	constructor() {
+		super();
+		this.state = {
+			gameBoard: [
+				'', '', '',
+				'', '', '',
+				'', '', ''
+			]
+		}
+	}
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+			<div className="menu">
+				<h1>Tic-Tac-Toe</h1>
+				<Message />
+				<ResetButton/>
+			</div>
+			{this.state.gameBoard.map(function(value, i){
+				<Tile />
+			})}
+
+
 		</div>
 	);
 };
