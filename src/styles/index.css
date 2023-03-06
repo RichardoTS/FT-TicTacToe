@@ -1,11 +1,17 @@
 body {
     font: 20px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    
+  }
+  #set-game{
+    display: flex;    
+    justify-content: center;
   }
   .board-row:after {
     clear: both;
     content: "";
     display: table;
+    
   }
   .square {
     border: 1px solid #999;

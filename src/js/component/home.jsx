@@ -8,7 +8,7 @@ import Board from "./Board.jsx";
 const Home = () => {
 	return (
 		<>
-			<div className="center">
+			<div id="set-game">
 				<Board />
 			</div>
 		</>
