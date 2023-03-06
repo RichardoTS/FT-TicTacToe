@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import Board from "./Board.jsx";
+
 
 
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="container center">
-			<p>this does not work</p>
-		</div>
+		<>
+			<div className="center">
+				<Board />
+			</div>
+		</>
 	)
-
-
 };
 
 export default Home;
