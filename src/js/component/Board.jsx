@@ -11,7 +11,7 @@ const Board = () => {
     let status
 
     if (winner) {
-        alert(`Winner: ${winner}`);
+        alert(`The winner is ${winner} !`);
     } else {
         status = 'Next player: ' + (isX ? 'X' : 'O');
     }
